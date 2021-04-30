@@ -4,14 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'index.js',
+    filename: 'app.js',
     path: path.resolve(__dirname, 'docs'),
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'docs'),
     port: 3000,
     open: true,
     watchContentBase: true,
