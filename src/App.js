@@ -6,7 +6,7 @@ import { Footer } from "./components/Footer/Footer";
 import { ToggleTodos } from "./components/ToggleTodos/ToggleTodos";
 
 export default function App() {
-  const [filter, setFilter] = useState("all"); // active | completed
+  const [filter, setFilter] = useState("all");
   const [todos, setTodos] = useState([]);
 
   const filteredTodos = todos.filter((todo) => {
